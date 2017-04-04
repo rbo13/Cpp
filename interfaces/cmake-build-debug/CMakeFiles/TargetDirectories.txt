@@ -1,0 +1,3 @@
+C:/Users/b0kn0y/CLionProjects/interfaces/cmake-build-debug/CMakeFiles/interfaces.dir
+C:/Users/b0kn0y/CLionProjects/interfaces/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/b0kn0y/CLionProjects/interfaces/cmake-build-debug/CMakeFiles/rebuild_cache.dir
