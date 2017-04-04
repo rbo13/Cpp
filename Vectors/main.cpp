@@ -2,6 +2,61 @@
 #include <vector>
 using namespace std;
 
+/**
+ * Method that creates a 20 sized vector.
+ */
+void create_vector() {
+
+    vector<double> student_marks(20);
+
+    for (vector<double>::size_type i = 0; i < 20; ++i) {
+
+        cout << "Enter marks for student #:" << i + 1 << " : " << flush;
+        cin >> student_marks[i];
+    }
+
+    // Print
+    for (int i = 0; i < student_marks.size(); ++i) {
+        cout << "Student "<< i << " has a grade of : " << student_marks[i] << endl;
+    }
+}
+
+/**
+ * Method that resizes the vector
+ * based on a user input
+ */
+void resize_vector() {
+
+    vector<double> student_marks;
+
+    int num_students;
+
+    cout << "Enter number of students: " <<flush;
+    cin >> num_students;
+
+    //resize the vector.
+    student_marks.resize(num_students);
+
+    for (vector<double>::size_type i = 0; i < num_students; ++i) {
+
+        cout << "Enter marks for student #:" << i + 1 << " : " << flush;
+        cin >> student_marks[i];
+    }
+
+    // Print
+    for (int i = 0; i < student_marks.size(); ++i) {
+        cout << "Student "<< i << " has a grade of : " << student_marks[i] << endl;
+    }
+}
+
+/**
+ * Method that inserts a new element
+ * to the vector.
+ */
+void vector_menu() {
+    
+}
+
 int main() {
 
     /**
@@ -12,34 +67,8 @@ int main() {
      * as the data grows.
      */
 
-    // Create a vector to store int.
-    vector<int> vec;
-
-
-    // Display the size.
-    cout << "The size of the vector is: " << vec.size() << endl;
-
-    // Push 5 values into the vector.
-    for(int i = 0; i < 5; i++) {
-        vec.push_back(i);
-    }
-
-    // Display the newly size of the vector.
-    cout << "Extended vector size: " << vec.size() << endl;
-
-    // Get 5 values to vector
-    for (int i = 0; i < vec.size(); i++) {
-
-        cout << "Values of vec: [" << vec[i] <<"]" << endl;
-    }
-
-    // Using the Iterator.
-    vector<int>::iterator v = vec.begin();
-
-    while(v != vec.end()) {
-        cout << "Value of vec using iterator = " << *v << endl;
-        v++;
-    }
+    //create_vector();
+    //resize_vector();
 
     return 0;
 }
